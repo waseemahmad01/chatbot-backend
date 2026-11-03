@@ -11,6 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 load_dotenv()
 
+# Add all models to DB if not exist
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
